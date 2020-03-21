@@ -1,3 +1,5 @@
 # pastagram
 this program is a similar version to instagram 
-http://g.recordit.co/5ANE7xYgzK.gif
+
+
+<img src="http://g.recordit.co/5ANE7xYgzK.gif" width=250><br>
