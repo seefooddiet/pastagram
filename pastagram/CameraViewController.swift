@@ -14,6 +14,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var comment: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,7 +64,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaleImage = image.af_imageScaled(to: size)
+        let scaleImage = image.af_imageAspectScaled(toFill: size)
         
         imageView.image = scaleImage
         
